@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC Furniture - Premium Quality Furniture in North Carolina</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-couch"></i>
+                    <span>NC Furniture</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#research">Research Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Premium Quality Furniture in North Carolina</h1>
+                <p>High-quality furniture at competitive prices. Shop our showroom in the Triangle area or browse our catalog for home delivery.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">Below Retail</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Day Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Items in Stock</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('products')">Shop Now</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Visit Showroom</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Product Catalog</h2>
+                <div class="product-filters">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="living-room">Living Room</button>
+                    <button class="filter-btn" data-category="bedroom">Bedroom</button>
+                    <button class="filter-btn" data-category="dining">Dining Room</button>
+                    <button class="filter-btn" data-category="office">Office</button>
+                    <button class="filter-btn" data-category="decorative">Decorative</button>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section">
+            <div class="container">
+                <h2>Research Gallery</h2>
+                <p>Our team's latest findings from furniture stores and market research</p>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <div class="research-image">
+                            <i class="fas fa-image"></i>
+                            <span>Furniture World Visit</span>
+                        </div>
+                        <div class="research-content">
+                            <h3>Cary Location Analysis</h3>
+                            <p>Comprehensive pricing and style analysis from recent store visit. Focus on contemporary and traditional pieces.</p>
+                            <span class="research-date">Recent Visit</span>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-image">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Market Research</span>
+                        </div>
+                        <div class="research-content">
+                            <h3>Competitor Analysis</h3>
+                            <p>Price comparison and market positioning study for the Triangle area furniture market.</p>
+                            <span class="research-date">Ongoing</span>
+                        </div>
+                    </div>
+                    <div class="research-item">
+                        <div class="research-image">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Product Ideas</span>
+                        </div>
+                        <div class="research-content">
+                            <h3>Decorative Lighting</h3>
+                            <p>Research on chandeliers and decorative lamps to complement furniture imports.</p>
+                            <span class="research-date">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About NC Furniture</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Quality Furniture for North Carolina Families</h3>
+                        <p>NC Furniture brings you high-quality furniture at competitive prices through our expertise in global sourcing and local market knowledge. Our team combines years of furniture industry experience with deep understanding of North Carolina customers' needs.</p>
+                        <p>We maintain a carefully curated inventory in our Triangle area showroom, offering both immediate delivery and special order options. Our focus is on providing exceptional value without compromising on quality.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-warehouse"></i>
+                            <h4>Local Showroom</h4>
+                            <p>Visit our showroom by appointment in the Triangle area</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-truck"></i>
+                            <h4>Delivery & Setup</h4>
+                            <p>Flat delivery rate with setup included in service</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star"></i>
+                            <h4>Quality Guarantee</h4>
+                            <p>Every piece inspected for quality before delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-couch"></i>
+                        <h3>Showroom Viewing</h3>
+                        <p>Visit our Triangle area showroom by appointment to see and feel our furniture before you buy.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-truck"></i>
+                        <h3>Home Delivery</h3>
+                        <p>Flat delivery rate with setup included. White glove service available for larger items.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h3>Quality Assurance</h3>
+                        <p>Every piece is inspected for quality and craftsmanship before leaving our warehouse.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Special Orders</h3>
+                        <p>Don't see what you want? We can special order items from our supplier network.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-store"></i>
+                        <h3>Wholesale Pricing</h3>
+                        <p>Competitive pricing for interior designers, contractors, and bulk purchasers.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-language"></i>
+                        <h3>Multilingual Service</h3>
+                        <p>English, Nepali, Hindi, and Chinese language support for our diverse customer base.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Visit Our Showroom</h3>
+                        <p>Ready to find the perfect furniture for your home or business? Contact us to schedule a showroom visit or ask about our current inventory.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Serving Triangle Area: Cary, Apex, Holly Springs</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@ncfurnitureimport.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="showroom-visit">Schedule Showroom Visit</option>
+                                <option value="special-order">Special Order Request</option>
+                                <option value="wholesale">Wholesale/Contractor Pricing</option>
+                                <option value="delivery">Delivery Information</option>
+                                <option value="general">General Information</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your furniture needs, room dimensions, style preferences, or any questions..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-section">
+                    <img id="modal-image" src="" alt="">
+                    <div class="image-navigation">
+                        <button id="prev-image" class="nav-btn">&lt;</button>
+                        <button id="next-image" class="nav-btn">&gt;</button>
+                    </div>
+                </div>
+                <div class="modal-info-section">
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-price" id="modal-price"></div>
+                    <div class="modal-description" id="modal-description"></div>
+                    <div class="modal-specs" id="modal-specs"></div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">Schedule Viewing</button>
+                        <button class="btn btn-secondary" id="share-product">Share Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NC Furniture</h3>
+                    <p>Quality furniture for North Carolina families at competitive prices with exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Showroom Viewing</li>
+                        <li>Home Delivery</li>
+                        <li>Special Orders</li>
+                        <li>Wholesale Pricing</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Area</h4>
+                    <ul>
+                        <li>Cary, NC</li>
+                        <li>Apex, NC</li>
+                        <li>Holly Springs, NC</li>
+                        <li>Greater Triangle Area</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NC Furniture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
